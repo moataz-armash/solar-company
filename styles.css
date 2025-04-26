@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #fff;
+  line-height: 1;
+  font-weight: 400;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+nav {
+  background-color: #0b9586;
+  display: flex;
+  justify-content: space-between;
+  padding: 2.4rem 11rem;
+  align-items: center;
+}
+
+nav img {
+  width: 14rem;
+  height: 5rem;
+  align-items: center;
+  object-fit: cover;
+  color: #0a8678;
+  mix-blend-mode: multiply;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 3.8rem;
+  align-items: center;
+}
+
+.navbar-links li {
+  list-style-type: none;
+}
+
+.navbar-links a {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 300;
+  padding: 1.2rem 2.4rem;
+  text-decoration: none;
+}
+
+.navbar-links a:hover,
+.navbar-links a.active {
+  background-color: #0a8c7e;
+  border-radius: 0.5rem;
+  border-bottom: 0.5rem solid #0c6059;
+}
+
+.navbar-links a.icon {
+  display: none;
+}
+
+/* .navbar-contact {
+  padding: 1.8rem;
+} */
+
+.navbar-contact p {
+  color: #fff;
+}
+
+.navbar-contact .call-us-letter {
+  text-align: end;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.navbar-contact .call-us-number {
+  font-size: 2.8rem;
+  font-weight: 500;
+}
