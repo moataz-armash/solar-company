@@ -15,6 +15,12 @@ html {
   font-size: 62.5%;
 }
 
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
 /* ------------------- */
 /* Navbar Styles       */
 /* ------------------- */
@@ -87,11 +93,105 @@ nav img {
 /* Hero Section Styles       */
 /* ------------------- */
 
+.hero-section {
+  background-image: url("./images/solar-panels-meadow.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 65rem;
+  position: relative;
+}
+
+.progress-box {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  width: 33.2rem;
+  height: 2.4rem;
+  position: absolute;
+  top: 9rem;
+  left: 12rem;
+}
+
+.progress-bar-border {
+  width: 100%;
+  height: 0.5rem;
+  background-color: #575757;
+}
+
+.progress-bar-white {
+  width: 25%;
+  height: 0.5rem;
+  background-color: #fff;
+}
+
+.progress-box:first-child,
+.progress-box:last-child {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 0.094rem;
+}
+
+.hero-box {
+  display: flex;
+  flex-direction: column;
+  width: 72.9rem;
+  height: 30.5rem;
+  position: absolute;
+  top: 24rem;
+  left: 12rem;
+  gap: 2.4rem;
+}
+
+.hero-box h1 {
+  font-size: 5.2rem;
+  font-weight: 600;
+  letter-spacing: -2%;
+  color: #fff;
+}
+
+.hero-box p {
+  font-size: 2.1rem;
+  font-weight: 400;
+  line-height: 3rem;
+  letter-spacing: 0%;
+  color: #fff;
+}
+
+.hero-box div {
+  display: flex;
+  gap: 2.4rem;
+}
+
+.call-us-btn {
+  padding: 1.2rem 3.4rem;
+  background-color: #3cab90;
+  color: #fff;
+  border-radius: 10.9rem;
+  font-size: 1.4rem;
+  border: none;
+  font-weight: 400;
+}
+
+.request-btn {
+  padding: 1.2rem 3.4rem;
+  background-color: #ffbb1c;
+  border-radius: 10.9rem;
+  font-size: 1.4rem;
+  border: none;
+  font-weight: 400;
+}
+
 /* ------------------- */
 /* Responsive Styles       */
 /* ------------------- */
 
 @media (max-width: 768px) {
+  /* ------------------- */
+  /* Navbar Styles       */
+  /* ------------------- */
+
   .navbar-links {
     max-height: 0;
     opacity: 0;
@@ -106,11 +206,12 @@ nav img {
     text-align: center;
     justify-content: center;
     transition: opacity 0.3s ease, max-height 0.3s ease-out;
+    z-index: 1000;
   }
 
   .navbar-links.active {
     opacity: 1;
-    max-height: 50rem;
+    max-height: 70rem;
   }
 
   .menu-icon {
@@ -119,6 +220,56 @@ nav img {
 
   .navbar-contact {
     display: none;
+  }
+
+  /* ------------------- */
+  /* Hero Section Styles       */
+  /* ------------------- */
+
+  .progress-box {
+    gap: 3rem;
+    width: 20.2rem;
+    height: 2.4rem;
+    top: 9rem;
+  }
+
+  .progress-box:first-child,
+  .progress-box:last-child {
+    color: #fff;
+    font-size: 1.2rem;
+  }
+
+  .hero-box {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 20rem;
+    top: 18rem;
+    gap: 2.4rem;
+    padding-right: 2rem;
+  }
+
+  .hero-box h1 {
+    font-size: 4rem;
+  }
+
+  .hero-box p {
+    font-size: 1.6rem;
+  }
+
+  .hero-box div {
+    gap: 2rem;
+  }
+
+  .call-us-btn {
+    padding: 1rem 3rem;
+    color: #fff;
+    font-size: 1.2rem;
+  }
+
+  .request-btn {
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -137,12 +288,14 @@ nav img {
     text-align: center;
     justify-content: center;
     transition: opacity 0.3s ease, max-height 0.3s ease-out;
+    z-index: 1000;
   }
 
   .navbar-links.active {
     opacity: 1;
-    max-height: 50rem;
+    max-height: 70rem;
   }
+
   .menu-icon {
     display: block;
   }
