@@ -565,8 +565,6 @@ nav img {
   box-shadow: 0px 4px 30px 0px #0000000d;
 }
 
-
-
 .energy-section__col-2 .card:nth-child(2) {
   height: fit-content;
   gap: 0;
@@ -615,7 +613,7 @@ nav img {
 .energy-section__col-2 p,
 .energy-section__col-3 p {
   width: 100%;
-  height: 12rem;
+  height: fit-content;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 2.4rem;
@@ -647,6 +645,394 @@ nav img {
   outline: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+/* ------------------- */
+/* Our Values Section Styles       */
+/* ------------------- */
+
+.our-values .container {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding: 8rem 0;
+  gap: 2.3rem;
+  justify-content: center;
+}
+
+.our-values h1 {
+  width: 100%;
+  height: fit-content;
+  font-weight: 600;
+  font-size: 4.2rem;
+  line-height: 100%;
+  letter-spacing: -2%;
+  text-align: center;
+  color: #101828;
+}
+
+.our-values p {
+  width: 100%;
+  height: fit-content;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #475467;
+}
+
+.our-values-container {
+  width: 100%;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.2rem;
+  justify-items: center;
+  padding: 5rem;
+}
+
+.our-values-container__box {
+  width: 100%;
+  height: 42rem;
+  border-radius: 1.2rem;
+  padding: 3.2rem;
+  border-width: 0.1rem;
+  background: #3cab900d;
+  border: 1px solid #3cab90;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 4rem;
+}
+
+.our-values-container__box img {
+  width: 7rem;
+  height: 7rem;
+}
+
+.our-values-container__box h3 {
+  width: 100%;
+  height: fit-content;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 3rem;
+  letter-spacing: 0%;
+  color: #101828;
+}
+
+.our-values-container__box p {
+  width: 100%;
+  height: fit-content;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  letter-spacing: 0%;
+  color: #475467;
+  text-align: left;
+}
+
+/* ------------------- */
+/* Testimonials Section Styles       */
+/* ------------------- */
+
+.testimonials-section .container {
+  display: flex;
+  padding: 0 7rem 7rem 7rem;
+  justify-content: space-between;
+}
+
+.testimonials-section aside:nth-child(1) {
+  width: 40rem;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+  padding: 2rem;
+}
+
+.testimonials-section aside:nth-child(2) {
+  width: 70.8rem;
+  height: fit-content;
+  gap: 8.7rem;
+  border-radius: 2.4rem;
+  padding: 4rem;
+  background: #3cab900f;
+}
+
+.testimonials-section img {
+  width: 5.8rem;
+  height: 4.8rem;
+}
+
+.testimonials-section h1 {
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 6.4rem;
+  letter-spacing: 0%;
+  color: #1c1c1c;
+}
+
+.testimonials-section p {
+  width: 100%;
+  height: fit-content;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  letter-spacing: 0%;
+  color: #1c1c1c;
+}
+
+.testimonials-section .paragraph-side h6 {
+  width: 100%;
+  height: 2rem;
+  font-family: Plus Jakarta Sans;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #3cab90;
+}
+
+.testimonials-section .paragraph-side p {
+  width: 100%;
+  height: fit-content;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #101828;
+  margin-top: 3rem;
+}
+
+.testimonials-section .top-box {
+  height: fit-content;
+  display: flex;
+  gap: 5.2rem;
+}
+
+.testimonials-section .paragraph-side {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.testimonials-section .navigation-dots {
+  display: flex;
+  gap: 1rem;
+}
+
+.testimonials-section .circle {
+  width: 0.8rem;
+  height: 0.8rem;
+  display: block;
+  background: #d9d9d9;
+  border-radius: 50%;
+}
+
+.testimonials-section .navigation-dots span.circle:first-of-type {
+  background: #6b6b6b;
+}
+
+.testimonials-section .down-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.testimonials-section .down-box .left-side {
+  width: 30.2rem;
+  height: fit-content;
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.testimonials-section .down-box .left-side img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 3rem;
+}
+
+.testimonials-section .down-box .left-side h5 {
+  width: 100%;
+  height: 1.9rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.testimonials-section .down-box .left-side p {
+  width: 100%;
+  height: fit-content;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #1c1c1c;
+}
+
+.testimonials-section .down-box .left-side div {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonials-section .down-box .right-side img {
+  width: 11.2rem;
+  height: fit-content;
+  gap: 1.6rem;
+  cursor: pointer;
+}
+
+/* ------------------- */
+/* Footer Section Styles       */
+/* ------------------- */
+
+footer {
+  background-color: #283646;
+  height: auto;
+}
+
+footer .container {
+  padding: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.footer__top-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.footer__top-box .left-box {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.footer__top-box .left-box img {
+  width: 18.5rem;
+  height: 6.4rem;
+  mix-blend-mode: Luminosity;
+}
+
+.footer__navigation-links {
+  display: flex;
+  gap: 4rem;
+}
+
+.footer__navigation-links li {
+  list-style-type: none;
+}
+
+.footer__navigation-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.03rem;
+}
+
+.footer__top-box .right-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer__top-box .right-box .subscribe-form {
+  width: 40.6rem;
+  height: fit-content;
+  position: relative;
+}
+
+.subscribe-form button {
+  position: absolute;
+  height: 4.8rem;
+  right: 0;
+  cursor: pointer;
+  gap: 1rem;
+  border-radius: 10.9rem;
+  padding: 1.2rem 3.4rem;
+  background-color: #ffbb1c;
+  color: #fff;
+  outline: none;
+  border: none;
+}
+
+.subscribe-form input {
+  border: 1px solid #b3bdc7;
+  background: #ffffff17;
+  width: 100%;
+  height: 4.8rem;
+  border-radius: 3.8rem;
+  padding-left: 2rem;
+  border-width: 0.1rem;
+}
+
+.subscribe-form input::placeholder {
+  color: #92989f;
+}
+
+.footer__top-box .right-box p {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.03rem;
+}
+
+footer .seperation-line {
+  width: 100%;
+  height: 0.1rem;
+  border-width: 0.1rem;
+  border: 0.1rem solid #71777d;
+}
+
+.footer__down-box {
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
+}
+
+.footer__down-box .left-box .links {
+  display: flex;
+}
+
+.footer__down-box .left-box .links li {
+  list-style: none;
+  padding-right: 1.8rem;
+  border-right: 0.1rem solid #92989f;
+}
+
+.footer__down-box .left-box .links li:not(:first-child) {
+  padding-left: 1.8rem;
+}
+
+.footer__down-box .left-box .links li a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.026rem;
+  color: #92989f;
+}
+
+.footer__down-box .right-box p {
+  gap: 5.4rem;
+  color: #92989f;
+
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.026rem;
+  text-align: right;
 }
 
 /* ------------------- */
@@ -838,15 +1224,61 @@ nav img {
     font-size: 1.4rem;
   }
 
-  
   /* ------------------- */
   /* Energy Section Styles       */
   /* ------------------- */
 
   .energy-section .container {
     grid-template-columns: repeat(1, 1fr);
+
+    justify-items: center;
   }
 
+  /* ------------------- */
+  /* Our Values Section Styles       */
+  /* ------------------- */
+
+  .our-values-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3.2rem;
+    padding: 0 10rem;
+  }
+
+  .our-values-container__box {
+    height: auto;
+  }
+
+  /* ------------------- */
+  /* Testimonials Section Styles       */
+  /* ------------------- */
+
+  .testimonials-section .container {
+    flex-direction: column;
+    padding: 0 10rem 10rem 10rem;
+    gap: 3rem;
+  }
+
+  .testimonials-section aside:nth-child(2) {
+    width: 100%;
+  }
+
+  /* ------------------- */
+  /* Footer Section Styles       */
+  /* ------------------- */
+  .footer__top-box {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .footer__top-box .left-box {
+    width: 100%;
+    align-items: center;
+  }
+
+  .footer__top-box .right-box {
+    width: 100%;
+    align-items: center;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -989,16 +1421,47 @@ nav img {
   /* ------------------- */
 
   .energy-section .container {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .energy-section__col-1 {
+    grid-column: 1 / -1;
   }
 
   .energy-section__col-2,
   .energy-section__col-3 {
     width: 100%;
     height: fit-content;
-    flex-direction: row;
+    /* flex-direction: row; */
   }
 
+  /* ------------------- */
+  /* Our Values Section Styles       */
+  /* ------------------- */
+
+  .our-values-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.2rem;
+    padding: 0 10rem;
+  }
+
+  /* ------------------- */
+  /* Footer Section Styles       */
+  /* ------------------- */
+  .footer__top-box {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .footer__top-box .left-box {
+    width: 100%;
+    align-items: center;
+  }
+
+  .footer__top-box .right-box {
+    width: 100%;
+    align-items: center;
+  }
 }
 
 @media (min-width: 1025px) {
