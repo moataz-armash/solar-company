@@ -317,6 +317,339 @@ nav img {
 }
 
 /* ------------------- */
+/* Solar Kits Section Styles       */
+/* ------------------- */
+
+.solar-kits .container {
+  display: flex;
+  flex-direction: column;
+  height: 77.7rem;
+  padding: 8rem 0;
+  gap: 3rem;
+  align-items: center;
+}
+
+.solar-kits h2 {
+  width: 93.6rem;
+  height: 5.1rem;
+  font-weight: 600;
+  font-size: 4.2rem;
+  letter-spacing: -2%;
+  color: #101828;
+  text-align: center;
+}
+
+.solar-kits p {
+  width: 93.6rem;
+  height: 4.8rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #475467;
+}
+
+.cards-box {
+  width: 100%;
+  height: 45.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.2rem;
+  justify-content: space-around;
+}
+
+.cards-box div {
+  flex: 1;
+  width: 100%;
+  height: 45.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  box-shadow: 0px 4px 30px 0px #0000000d;
+}
+
+.cards-box img {
+  width: 100%;
+  height: 24rem;
+}
+
+.cards-box h4 {
+  width: 100%;
+
+  height: 3rem;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 3rem;
+  letter-spacing: 0%;
+  color: #101828;
+  padding-left: 2rem;
+}
+
+.cards-box p {
+  width: 100%;
+  height: 7.2rem;
+  color: #475467;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  letter-spacing: 0%;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-align: left;
+  padding: 0 2rem;
+}
+
+.cards-box button {
+  width: 14.1rem;
+  height: 2.4rem;
+  gap: 1rem;
+  display: flex;
+  margin-left: 2rem;
+  font-size: 1.6rem;
+  letter-spacing: 0%;
+  color: #3cab90;
+  font-weight: 600;
+  line-height: 2.4rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.cards-box .arrow-icon {
+  color: #3cab90;
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+
+/* ------------------- */
+/* Repairs Section Styles       */
+/* ------------------- */
+
+.repairs-image {
+  background-image: url("./images/repairs.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 50.5rem;
+  position: relative;
+}
+
+.blur-box {
+  width: 85.5rem;
+  height: 31.1rem;
+  border-radius: 1.2rem;
+  padding: 4.4rem;
+  gap: 3.2rem;
+  background: #00000091;
+  backdrop-filter: blur(24px);
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.blur-box h1 {
+  width: 100%;
+  height: 5.1rem;
+  font-weight: 600;
+  font-size: 4.2rem;
+  line-height: 100%;
+  letter-spacing: -2%;
+  color: #fff;
+  text-align: center;
+}
+
+.blur-box p {
+  font-size: 1.8rem;
+  line-height: 140%;
+  letter-spacing: 0%;
+  font-weight: 400;
+  height: 14rem;
+  color: #fff;
+  text-align: center;
+}
+
+/* ------------------- */
+/* Repairs Section Styles       */
+/* ------------------- */
+
+.energy-section {
+  width: 100%;
+  height: fit-content;
+  padding: 8rem 15rem;
+  background-color: #ffbb1c0d;
+}
+
+.energy-section .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.2rem;
+}
+
+.energy-section__col-1 {
+  width: 35.8rem;
+  height: 33.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.energy-section__col-1 .icon-box {
+  width: 5.6rem;
+  height: 5.6rem;
+  border-radius: 1rem;
+  border-width: 2.1rem;
+  background-color: #3cab90;
+  position: relative;
+  outline: 1rem solid rgba(60, 171, 144, 0.2);
+}
+
+.icon-box svg {
+  position: absolute;
+  margin: auto;
+  inset: 0;
+}
+
+.energy-section__col-1 h1 {
+  width: 100%;
+  font-weight: 600;
+  font-size: 4.2rem;
+  line-height: 100%;
+  letter-spacing: -2%;
+  align-self: center;
+  color: #101828;
+}
+
+.energy-section__col-1 p {
+  width: 100%;
+  height: 8.4rem;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  letter-spacing: 0%;
+  color: #475467;
+}
+
+/* .energy-section__col-2 {
+  height: 81.4rem;
+} */
+
+.energy-section__col-2,
+.energy-section__col-3 {
+  width: 35.8rem;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.energy-section__col-2 .card,
+.energy-section__col-3 .card {
+  width: 35.8rem;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  border-radius: 1.2rem;
+  padding: 2.4rem;
+  border-width: 0.1rem;
+  background: #3cab900d;
+  border: 1px solid #3cab90;
+  box-shadow: 0px 4px 30px 0px #0000000d;
+}
+
+
+
+.energy-section__col-2 .card:nth-child(2) {
+  height: fit-content;
+  gap: 0;
+}
+
+.energy-section__col-2 .card:nth-child(2) h1 {
+  margin: 2rem 0;
+  height: fit-content;
+}
+
+.energy-section__col-2 .card:nth-child(2) p {
+  height: fit-content;
+}
+.energy-section__col-2 .image-holder,
+.energy-section__col-3 .image-holder {
+  width: 100%;
+  height: 10.6rem;
+  gap: 1rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  background: #3cab9026;
+  position: relative;
+}
+
+.energy-section__col-2 .image-holder img,
+.energy-section__col-3 .image-holder img {
+  width: 22.5rem;
+  height: 4.9rem;
+  mix-blend-mode: Luminosity;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+}
+
+.energy-section__col-2 h1,
+.energy-section__col-3 h1 {
+  width: 100%;
+  height: 6rem;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 3rem;
+  letter-spacing: 0%;
+  color: #101828;
+}
+
+.energy-section__col-2 p,
+.energy-section__col-3 p {
+  width: 100%;
+  height: 12rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  letter-spacing: 0%;
+  color: #475467;
+}
+
+.energy-section__col-2 p span,
+.energy-section__col-3 p span {
+  text-decoration-line: underline;
+  text-decoration-thickness: 0%;
+  text-underline-offset: 0%;
+  text-decoration-style: solid;
+}
+
+.energy-section__col-2 button,
+.energy-section__col-3 button {
+  width: 100%;
+  height: 2.4rem;
+  display: flex;
+  gap: 0.8rem;
+
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  letter-spacing: 0%;
+  color: #3cab90;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* ------------------- */
 /* Responsive Styles       */
 /* ------------------- */
 
@@ -442,6 +775,78 @@ nav img {
   .cta-box p {
     font-size: 1.6rem;
   }
+
+  /* ------------------- */
+  /* Solar Kits Section Styles       */
+  /* ------------------- */
+
+  .solar-kits .container {
+    height: 170rem;
+    margin-bottom: 10rem;
+  }
+
+  .solar-kits p {
+    padding: 0 9rem;
+  }
+
+  .cards-box {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 4rem;
+    width: 90%;
+  }
+
+  .cards-box div {
+    width: 100%;
+  }
+
+  .solar-kits h2,
+  .solar-kits p {
+    width: 100%;
+  }
+
+  .cards-box h4,
+  .cards-box p {
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .cards-box button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  /* ------------------- */
+  /* Repairs Section Styles       */
+  /* ------------------- */
+
+  .repairs-section {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .blur-box {
+    width: 50rem;
+  }
+
+  .blur-box h1 {
+    font-size: 2.8rem;
+  }
+
+  .blur-box p {
+    font-size: 1.4rem;
+  }
+
+  
+  /* ------------------- */
+  /* Energy Section Styles       */
+  /* ------------------- */
+
+  .energy-section .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -560,6 +965,40 @@ nav img {
     width: 100%;
     object-fit: contain;
   }
+
+  /* ------------------- */
+  /* Solar Kits Section Styles       */
+  /* ------------------- */
+
+  .solar-kits .container {
+    height: 130rem;
+  }
+
+  .cards-box {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 4rem;
+    width: 90%;
+  }
+
+  .cards-box div {
+    width: 100%;
+  }
+
+  /* ------------------- */
+  /* Energy Section Styles       */
+  /* ------------------- */
+
+  .energy-section .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .energy-section__col-2,
+  .energy-section__col-3 {
+    width: 100%;
+    height: fit-content;
+    flex-direction: row;
+  }
+
 }
 
 @media (min-width: 1025px) {
