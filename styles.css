@@ -1039,10 +1039,14 @@ footer .seperation-line {
 /* Responsive Styles       */
 /* ------------------- */
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   /* ------------------- */
   /* Navbar Styles       */
   /* ------------------- */
+
+  nav {
+    padding: 2.4rem 4rem;
+  }
 
   .navbar-links {
     max-height: 0;
@@ -1083,6 +1087,7 @@ footer .seperation-line {
     width: 20.2rem;
     height: 2.4rem;
     top: 9rem;
+    left: 5rem;
   }
 
   .progress-box:first-child,
@@ -1095,10 +1100,11 @@ footer .seperation-line {
     display: flex;
     flex-direction: column;
     width: auto;
-    height: 20rem;
-    top: 18rem;
+    height: fit-content;
     gap: 2.4rem;
-    padding-right: 2rem;
+    left: 0;
+    top: 16rem;
+    padding: 4rem;
   }
 
   .hero-box h1 {
@@ -1129,9 +1135,49 @@ footer .seperation-line {
   /* ------------------- */
 
   .about-us .container {
-    height: 120rem;
-    padding: 8rem 12rem;
+    height: fit-content;
+    padding: 3rem 4rem;
     flex-direction: column;
+  }
+
+  .about-us-right-side {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .about-us-left-side h1 {
+    width: 100%;
+    height: fit-content;
+    font-size: 3.8rem;
+  }
+
+  .about-us-left-side p {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .steps {
+    width: 100%;
+  }
+
+  .step h6 {
+    font-size: 1.4rem;
+    width: 100%;
+    text-overflow: clip;
+    overflow: hidden;
+    white-space: wrap;
+  }
+
+  .about-us-right-side {
+    flex: 1;
+    height: fit-content;
+    border-radius: 1.2rem;
+    overflow-y: hidden;
+  }
+
+  .about-us-right-side img {
+    width: 100%;
+    object-fit: contain;
   }
 
   /* ------------------- */
@@ -1147,11 +1193,14 @@ footer .seperation-line {
     background-size: cover;
     height: 100svh;
     width: 100%;
-    background-position: center;
+    background-position: 55% 75%;
   }
 
   .cta-box {
-    inset: 20rem 0 0 12rem;
+    position: initial;
+    width: 100%;
+    padding: 14rem 4rem;
+    height: fit-content;
   }
 
   .cta-box h1 {
@@ -1169,16 +1218,20 @@ footer .seperation-line {
   .solar-kits .container {
     height: 170rem;
     margin-bottom: 10rem;
+    gap: 0;
   }
 
   .solar-kits p {
-    padding: 0 9rem;
+    padding: 4rem 5rem 0 5rem;
+
+    height: fit-content;
   }
 
   .cards-box {
     grid-template-columns: repeat(1, 1fr);
     padding: 4rem;
     width: 90%;
+    height: fit-content;
   }
 
   .cards-box div {
@@ -1213,7 +1266,9 @@ footer .seperation-line {
   }
 
   .blur-box {
-    width: 50rem;
+    width: 70%;
+    height: fit-content;
+    padding: 2rem;
   }
 
   .blur-box h1 {
@@ -1222,16 +1277,43 @@ footer .seperation-line {
 
   .blur-box p {
     font-size: 1.4rem;
+    height: fit-content;
   }
 
   /* ------------------- */
   /* Energy Section Styles       */
   /* ------------------- */
 
+  .energy-section {
+    padding: 4rem 2rem;
+  }
+
   .energy-section .container {
     grid-template-columns: repeat(1, 1fr);
-
+    width: 100%;
     justify-items: center;
+  }
+
+  .energy-section__col-1 {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .energy-section__col-1 h1 {
+    height: fit-content;
+  }
+
+  .energy-section__col-2,
+  .energy-section__col-3,
+  .energy-section__col-2 .card,
+  .energy-section__col-3 .card {
+    width: 100%;
+  }
+
+  .energy-section__col-1 p,
+  .energy-section__col-2 h1,
+  .energy-section__col-3 h1 {
+    height: fit-content;
   }
 
   /* ------------------- */
@@ -1241,11 +1323,23 @@ footer .seperation-line {
   .our-values-container {
     grid-template-columns: repeat(1, 1fr);
     gap: 3.2rem;
-    padding: 0 10rem;
+    padding-top: 0;
+  }
+
+  .our-values .container {
+    padding-bottom: 0;
+  }
+
+  .our-values p {
+    padding: 0 5rem;
   }
 
   .our-values-container__box {
     height: auto;
+  }
+
+  .our-values-container__box p {
+    padding: 0;
   }
 
   /* ------------------- */
@@ -1254,17 +1348,334 @@ footer .seperation-line {
 
   .testimonials-section .container {
     flex-direction: column;
-    padding: 0 10rem 10rem 10rem;
+    padding: 0 5rem 5rem 5rem;
     gap: 3rem;
+  }
+
+  .testimonials-section aside:nth-child(1) {
+    width: 100%;
+    padding: 0;
+    gap: 2rem;
   }
 
   .testimonials-section aside:nth-child(2) {
     width: 100%;
+    padding: 2rem;
+  }
+
+  .testimonials-section h1 {
+    font-size: 3.8rem;
+    line-height: 5rem;
+  }
+
+  .testimonials-section p {
+    line-height: 2.8rem;
+  }
+
+  .testimonials-section .top-box {
+    gap: 0;
+    flex-direction: column;
+  }
+
+  .testimonials-section .paragraph-side {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .testimonials-section .down-box {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .testimonials-section .down-box .left-side {
+    width: 100%;
+    margin-top: 2rem;
   }
 
   /* ------------------- */
   /* Footer Section Styles       */
   /* ------------------- */
+  footer .container {
+    padding: 0;
+  }
+
+  .footer__top-box {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .footer__top-box .right-box .subscribe-form {
+    width: 70%;
+  }
+
+  .footer__top-box .left-box {
+    width: 100%;
+    align-items: center;
+    margin-top: 3rem;
+    padding: 0 3rem;
+  }
+
+  .footer__top-box .right-box {
+    width: 100%;
+    align-items: center;
+  }
+
+  .footer__down-box {
+    flex-direction: column;
+  }
+
+  .footer__navigation-links {
+    gap: 1rem;
+  }
+
+  footer .container {
+    gap: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .footer__down-box .left-box .links li {
+    padding-right: 0.6rem;
+  }
+
+  .footer__down-box .left-box .links {
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .footer__down-box .left-box .links li:last-child {
+    border-right: 0;
+  }
+
+  .footer__down-box .right-box p {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 880px) {
+  /* ------------------- */
+  /* Navbar Section Styles       */
+  /* ------------------- */
+
+  .navbar-links {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    flex-direction: column;
+    background-color: #0a8678;
+    position: absolute;
+    top: 9rem;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+    transition: opacity 0.3s ease, max-height 0.3s ease-out;
+    z-index: 1000;
+  }
+
+  .navbar-links.active {
+    opacity: 1;
+    max-height: 70rem;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+  .navbar-contact {
+    display: none;
+  }
+  /* ------------------- */
+  /* Hero Section Styles       */
+  /* ------------------- */
+  .hero-box {
+    width: 100%;
+    height: fit-content;
+    left: 0;
+    padding: 3rem 6rem;
+  }
+
+  .progress-box {
+    left: 8rem;
+  }
+
+  /* ------------------- */
+  /* About us Section Styles       */
+  /* ------------------- */
+
+  .about-us .container {
+    height: fit-content;
+    padding: 6rem;
+    flex-direction: column;
+  }
+
+  .about-us-right-side {
+    padding-left: 4rem;
+  }
+
+  /* ------------------- */
+  /* CTA Section Styles       */
+  /* ------------------- */
+
+  .cta-box {
+    position: initial;
+    width: 100%;
+    padding: 20rem 6rem;
+    height: fit-content;
+  }
+
+  .cta-image {
+    background-size: cover;
+    height: 100svh;
+    width: 100%;
+    background-position: 55% 75%;
+  }
+
+  /* ------------------- */
+  /* Solar Kits Section Styles       */
+  /* ------------------- */
+
+  .solar-kits .container {
+    height: fit-content;
+    gap: 0;
+  }
+
+  .solar-kits h2,
+  .solar-kits p {
+    width: 100%;
+  }
+
+  .solar-kits p {
+    padding: 4rem 5rem 0 5rem;
+    height: fit-content;
+  }
+
+  .cards-box {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 4rem 4rem 0 4rem;
+    width: 90%;
+    height: fit-content;
+  }
+
+  .cards-box h4,
+  .cards-box p {
+    text-align: left;
+    padding: 0 2rem;
+  }
+
+  .cards-box button {
+    margin-left: 2rem;
+  }
+
+  /* ------------------- */
+  /* Energy Section Styles       */
+  /* ------------------- */
+
+  .repairs-section {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .blur-box {
+    width: 70%;
+    height: fit-content;
+    padding: 2rem;
+  }
+
+  .blur-box p,
+  .blur-box h1 {
+    height: fit-content;
+  }
+
+  .energy-section {
+    padding: 4rem 2rem;
+  }
+
+  .energy-section__col-1 {
+    grid-column: 1 / -1;
+  }
+
+  .energy-section .container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.6rem;
+    padding: 2rem;
+  }
+
+  .energy-section__col-2,
+  .energy-section__col-3,
+  .energy-section__col-1 {
+    gap: 1.6rem;
+    width: 100%;
+  }
+
+  .energy-section__col-2 .card,
+  .energy-section__col-3 .card {
+    width: 100%;
+    height: auto;
+  }
+
+  /* ------------------- */
+  /* Our Values Section Styles       */
+  /* ------------------- */
+
+  .our-values-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .our-values .container {
+    padding: 8rem 0 0 0;
+  }
+
+  .our-values-container__box {
+    width: 100%;
+    height: auto;
+  }
+
+  .our-values-container__box:nth-child(3) {
+    grid-column: 1/-1;
+  }
+
+  /* ------------------- */
+  /* Testimonials Section Styles       */
+  /* ------------------- */
+
+  .testimonials-section .container {
+    flex-direction: column;
+    padding: 0 5rem 5rem 5rem;
+    gap: 3rem;
+  }
+
+  .testimonials-section aside:nth-child(1) {
+    width: 100%;
+  }
+
+  .testimonials-section aside:nth-child(2) {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .testimonials-section .top-box {
+    gap: 0;
+    flex-direction: column;
+  }
+
+  .testimonials-section .paragraph-side {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  /* ------------------- */
+  /* Footer Section Styles       */
+  /* ------------------- */
+
+  footer .container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    gap: 3rem
+  }
+
   .footer__top-box {
     flex-direction: column;
     gap: 3rem;
@@ -1273,15 +1684,30 @@ footer .seperation-line {
   .footer__top-box .left-box {
     width: 100%;
     align-items: center;
+    margin-top: 3rem;
+    padding: 0 3rem;
   }
 
   .footer__top-box .right-box {
     width: 100%;
     align-items: center;
   }
+
+  .footer__down-box {
+    flex-direction: column;
+  }
+
+  .footer__down-box .left-box .links {
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .footer__down-box .right-box p{
+    text-align: center;
+  }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .navbar-links {
     max-height: 0;
     opacity: 0;
@@ -1464,5 +1890,5 @@ footer .seperation-line {
   }
 }
 
-@media (min-width: 1025px) {
-}
+/* @media (min-width: 1025px) {
+} */
