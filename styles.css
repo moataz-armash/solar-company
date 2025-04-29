@@ -810,12 +810,12 @@ nav img {
 .testimonials-section .top-box {
   height: fit-content;
   display: flex;
+  flex-direction: column;
   gap: 5.2rem;
 }
 
 .testimonials-section .paragraph-side {
   display: flex;
-  flex-direction: column;
   gap: 0;
 }
 
@@ -1707,7 +1707,7 @@ footer .seperation-line {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 881px) and (max-width: 1200px) {
   .navbar-links {
     max-height: 0;
     opacity: 0;
